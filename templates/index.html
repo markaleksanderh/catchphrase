@@ -4,10 +4,14 @@
 </head>
 <body>
   <div>
-    <p>{{catchphrase}}</p>
-    <p>{{gif_num}}</p>
-    <p>{{gif_num + 1}}</p>
-    <a href="{{gif_num+1}}">Next</a>
-    <p>{{gif}}</p>
+    <p>WTF Catchphrase</p>
+
+    <p>img src url: {{gif}}</p>
+    {% if gif_num+1 == gif_len %}
+      <p>The End</p>
+    {% else %}
+      <a href="{{gif_num+1}}">Next</a>
+    {% endif %}
+    <p>{{gif_num}}/{{gif_len}}</p>
   </div>
 </body>
