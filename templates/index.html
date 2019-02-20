@@ -1,12 +1,12 @@
 <!doctype html>
 <head>
   <title>Catchphases</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body>
   <div class="container">
     <p>WTF Catchphrase</p>
-    <img src="static/{{gif}}" width=300 height=300/>
     {% if gif_num+1 == gif_len %}
       <p>The End</p>
     {% else %}
@@ -16,4 +16,26 @@
     {% endif %}
     <p>{{gif_num+1}} of {{gif_len}}</p>
   </div>
+  <div class="game-grid" style="background:url(static/{{gif}})">
+    <div class="game-row">
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+    </div>
+    <div class="game-row">
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+    </div>
+    <div class="game-row">
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+      <div class="game-tile"></div>
+    </div>
+  </div>
+  <script>
+  var tiles = document.getElementsByClassName('game-tile')
+  console.log(tiles)
+  </script>
+
 </body>
