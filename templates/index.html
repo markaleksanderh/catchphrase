@@ -10,7 +10,9 @@
     {% if gif_num+1 == gif_len %}
       <p>The End</p>
     {% else %}
+    <p>
       <a href="{{gif_num+1}}">Next</a>
+    </p>
     {% endif %}
     <p>{{gif_num+1}} of {{gif_len}}</p>
   </div>
