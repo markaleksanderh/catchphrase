@@ -6,13 +6,12 @@
 <body>
   <div class="container">
     <p>WTF Catchphrase</p>
-    <img src="static/{{gif}}"/>
-    <p>img src url: {{gif}}</p>
+    <img src="static/{{gif}}" width=300 height=300/>
     {% if gif_num+1 == gif_len %}
       <p>The End</p>
     {% else %}
       <a href="{{gif_num+1}}">Next</a>
     {% endif %}
-    <p>{{gif_num}}/{{gif_len}}</p>
+    <p>{{gif_num+1}} of {{gif_len}}</p>
   </div>
 </body>
