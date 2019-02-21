@@ -28,7 +28,7 @@ def recruitment():
 @app.route('/nb')
 def nb():
     image_link = "static/newbusiness.gif"
-    link_value = 0
+    link_value = "wages"
     title = "New business"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
@@ -40,14 +40,14 @@ def game(gif_num):
 @app.route('/aob')
 def aob():
     image_link = 'static/aob.gif'
-    link_value = 'wages'
+    link_value = 'next'
     title = "Any other business?"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
 @app.route('/wages')
 def wages():
     image_link = "static/wages.gif"
-    link_value = 'next'
+    link_value = 0
     title = "Wages"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
