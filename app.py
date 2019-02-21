@@ -13,21 +13,21 @@ def index():
 
 @app.route('/studio')
 def studio():
-    image_link = None
+    image_link = "static/studio.gif"
     link_value = "recruitment"
     title = "Studio updates"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
 @app.route('/recruitment')
 def recruitment():
-    image_link = None
+    image_link = "static/recruitment.gif"
     link_value = "nb"
     title = "Recruitment updates"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
 @app.route('/nb')
 def nb():
-    image_link = None
+    image_link = "static/newbusiness.gif"
     link_value = 0
     title = "New business"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
@@ -39,9 +39,16 @@ def game(gif_num):
 
 @app.route('/aob')
 def aob():
-    image_link = None
-    link_value = 'next'
+    image_link = 'static/aob.gif'
+    link_value = 'wages'
     title = "Any other business?"
+    return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
+
+@app.route('/wages')
+def wages():
+    image_link = "static/wages.gif"
+    link_value = 'next'
+    title = "Wages"
     return render_template('index.html', title=title, link_value=link_value, image_link=image_link)
 
 @app.route('/next')
