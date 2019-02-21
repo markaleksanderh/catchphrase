@@ -1,20 +1,36 @@
 <!doctype html>
 <head>
   <title>Catchphrases</title>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/main.css">
 </head>
 <body>
-  <div class="container">
-    <h1>WTF Catchphrase</h1>
-    <div class="row">
-      <h3>Instructions</h3>
-      <p>Each project has a Catchphrase associated with it. Guess the Catchphrase and project to win a prize. Press space bar to reveal a tile. If you can't guess the catchphase and project, the person to your left has the next turn, and so on.</p>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">WTF Catchphrase</h1>
+      <p class="lead">Each project has a Catchphrase associated with it. Guess the Catchphrase and project to win a prize. Press space bar to reveal a tile. If you can't guess the catchphase and project, the person to your left has the next turn, and so on.</p>
+      <hr class="my-4">
+      <button type="button" class="btn btn-warning btn-lg">Pick a player</button>
+      <a href="0"><button type="button" class="btn btn-success btn-lg">Play</button></a>
+      <h2 id="player-name"></h2>
     </div>
+
+  </div>
+
+  <!-- <div class="container">
     <div class="row">
-      <h3>Pick first player</h3>
-    </div>
-    <div class="row">
-      <h1><a href="0">PRESS START</a></h1>
-    </div>
+      <div class="col-sm-5">
+        <h1>WTF Catchphrase</h1>
+        <div class="row">
+          <h3>Instructions</h3>
+          <p>Each project has a Catchphrase associated with it. Guess the Catchphrase and project to win a prize. Press space bar to reveal a tile. If you can't guess the catchphase and project, the person to your left has the next turn, and so on.</p>
+        </div>
+        <div class="row">
+          <h3>Pick first player</h3>
+        </div>
+        <div class="row">
+          <h1><a href="0">PRESS START</a></h1>
+        </div>
+    </div> -->
+    <script src="static/js/pick-player.js"></script>
 </body>
