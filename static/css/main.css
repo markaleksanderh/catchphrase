@@ -1,4 +1,4 @@
-.game-grid {
+/* .game-grid {
   width: 300px;
   height: 300px;
   background-color: rgb(200,200,200);
@@ -14,4 +14,48 @@
   background-color: rgb(220,220,220);
   width: 100px;
   height: 100px;
+} */
+
+
+body {
+  background:rgb(33, 92, 255);
+}
+
+.game-grid {
+  width: 720px;
+  height: 480px;
+  margin:100px auto 0px auto;
+
+  background-repeat: no-repeat!important;
+  -webkit-background-size: cover!important;
+  -moz-background-size: cover!important;
+  -o-background-size: cover!important;
+  background-size: cover!important;
+
+  border-radius: 4px;
+  position: relative;
+  overflow:hidden;
+  box-shadow: 0 24px 68px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.10);
+}
+
+.game-row {
+  width: 720px;
+}
+
+.game-tile {
+  display: inline-block;
+  margin: 0px -4px -4px 0px;
+  padding: 0px;
+  width: 240px;
+  height: 160px;
+  text-align: center;
+  opacity: 1;
+
+  background-color:#1B1C35;
+  background:url("https://i.ytimg.com/vi/bwfmWI1A7jU/hqdefault.jpg") no-repeat center center;
+  background-size:70% auto;
+}
+
+.game-tile:hover {
+  opacity: 0;
 }
