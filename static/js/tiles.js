@@ -1,12 +1,22 @@
 var tiles = document.getElementsByClassName('game-tile')
-console.log(tiles, tiles.length)
 var tileArr = []
 
 for (var i = 0; i < tiles.length; i++) {
-  tileArr.push(tiles[0])
+  tileArr.push(tiles[i])
 }
 
-console.log(tileArr)
+
+document.body.onkeyup = function(e){
+  if(e.keyCode==32) {
+    let i = Math.floor(Math.random()*tileArr.length)
+    let tile = tileArr[i]
+    tile.style.backgroundColor = "rgba(0,0,0,0)"
+    tileArr.splice(i, 1)
+  }
+}
+
+
+
 
 // var flashTile = style.backgroundColor = "rgba(0,0,0,0)"
 
@@ -16,18 +26,10 @@ console.log(tileArr)
 //   console.log(tile);
 // }, 1000);
 
+// function removeTile(arr) {
+//
+// }
 
-
-document.body.onkeyup = function(e){
-  if(e.keyCode==32) {
-    var i = Math.floor(Math.random()*tileArr.length)
-    console.log(i)
-    var tile = tileArr[i]
-    tile.style.backgroundColor = "rgba(0,0,0,0)"
-    tileArr.splice(i, 1)
-    console.log(tileArr)
-  }
-}
 
 // setInterval(function() {
 //   // console.log("outer")
