@@ -83,4 +83,11 @@ p {
 
 .play-button {
 
+
+
+}
+
+p.game-next {
+  padding-top: 30px;
+  text-align: center;
 }

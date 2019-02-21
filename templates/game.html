@@ -30,9 +30,11 @@
     <div class="row">
       <div class="col">
         {% if gif_num+1 == gif_len %}
+        <p class="game-next">
           <a href="aob"><button type="button" class="btn btn-success btn-lg">NEXT</button></a>
+        </p>
         {% else %}
-        <p>
+        <p class="game-next">
           <a href="{{gif_num+1}}"><button type="button" class="btn btn-success btn-lg">NEXT</button></a>
         </p>
         {% endif %}
