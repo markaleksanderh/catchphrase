@@ -35,5 +35,12 @@ def game(gif_num):
 
 @app.route('/aob')
 def aob():
+    link_value = 'next'
     title = "Any other business?"
-    return render_template('index.html', title=title)
+    return render_template('index.html', title=title, link_value=link_value)
+
+@app.route('/next')
+def next_week():
+    link_value = None
+    title = "Next week: Chris + Sophie"
+    return render_template('index.html', title=title, link_value=link_value)
