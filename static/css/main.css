@@ -45,23 +45,24 @@ body {
 }
 
 .game-tile {
-  display: inline-block;
-  margin: 0px -4px -4px 0px;
+  float: left;
+  margin: 0px;
   padding: 0px;
   width: 240px;
   height: 160px;
   text-align: center;
-  opacity: 1;
-
   background-color:#1B1C35;
   background:url("https://i.ytimg.com/vi/bwfmWI1A7jU/hqdefault.jpg") no-repeat center center;
-  background-size:70% auto;
+  background-size:100% auto;
 }
 
-.game-tile:hover {
-  opacity: 0;
-}
 
 h3 {
   color: yellow;
+}
+
+.next-button {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
 }

@@ -6,31 +6,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>WTF Catchphrase</h1>
-    {% if gif_num+1 == gif_len %}
-      <a href="aob">NEXT</a>
-    {% else %}
-    <p>
-      <h3><a href="{{gif_num+1}}">NEXT</a></h3>
-    </p>
-    {% endif %}
-    <p>{{gif_num+1}} of {{gif_len}}</p>
-  </div>
-  <div class="game-grid" style="background:url(static/{{gif}})">
-    <div class="game-row">
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
+    <div class="row">
+      <div class="col">
+        <div class="game-grid" style="background:url(static/{{gif}})">
+          <div class="game-row">
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+          </div>
+          <div class="game-row">
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+          </div>
+          <div class="game-row">
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+            <div class="game-tile"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="game-row">
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
-    </div>
-    <div class="game-row">
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
-      <div class="game-tile"></div>
+    <div class="row">
+      <div class="col">
+        {% if gif_num+1 == gif_len %}
+          <h3 class="next-button"><a href="aob">NEXT</a></h3>
+        {% else %}
+        <p>
+          <h3 class="next-button"><a href="{{gif_num+1}}">NEXT</a></h3>
+        </p>
+        {% endif %}
+      </div>
     </div>
   </div>
   <script src="static/js/tiles.js"></script>
