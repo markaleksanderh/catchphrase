@@ -16,9 +16,11 @@
   height: 100px;
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 body {
   background:rgb(33, 92, 255);
+  font-family: 'Press Start 2P'
 }
 
 .game-grid {
@@ -58,4 +60,8 @@ body {
 
 .game-tile:hover {
   opacity: 0;
+}
+
+h3 {
+  color: yellow;
 }
