@@ -20,7 +20,13 @@
 
 body {
   /* background:rgb(33, 92, 255); */
-  font-family: 'Press Start 2P'
+  font-family: 'Press Start 2P';
+  background-image: linear-gradient(129deg, #35136b 46.73%, #61fffa 46.73%, #61fffa 47.90%, #f714ff 47.90%, #f714ff 50%, #35136b 50%, #35136b 96.73%, #61fffa 96.73%, #61fffa 97.90%, #f714ff 97.90%, #f714ff 100%);
+  background-size: 275.37px 340.05px;
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0,0);
 }
 
 .game-grid {
@@ -57,12 +63,24 @@ body {
 }
 
 
-h3 {
+/* h3 {
   color: yellow;
-}
+} */
 
 .next-button {
   padding-top: 10px;
   text-align: center;
   font-size: 30px;
+}
+
+h1 {
+  color: yellow;
+}
+
+p {
+  color: white;
+}
+
+.play-button {
+
 }
